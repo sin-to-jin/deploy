@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  ruby:
+    version: 2.3.0
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - sh script/deploy-staging.sh
