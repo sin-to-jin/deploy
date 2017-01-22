@@ -1,3 +1,5 @@
+# CircleCIへの設定ファイル
+
 machine:
   timezone:
     Asia/Tokyo
@@ -8,4 +10,5 @@ deployment:
   production:
     branch: master
     commands:
+      # デプロイ用のスクリプト指定
       - sh script/deploy-staging.sh
